@@ -1,9 +1,0 @@
-//"excuteNew.script
-var i = 0;
-while (i < 25) {
-        var hostname = "pserv-" + i
-        killall(hostname);
-        scp("hackscript2.script", hostname);
-        exec("hackscript2.script", hostname, 3);
-        ++i;
-}
